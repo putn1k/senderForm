@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Формы обратной связи</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form class="form" method="post">
+    <input type="hidden" name="Форма" value="Форма">
+    <input class="form__input" type="text" placeholder="Имя" name="Имя">
+    <input class="form__input" type="tel" placeholder="Телефон" name="Телефон">
+    <input class="form__input" type="email" placeholder="Эл.почта" name="Эл.почта">
+    <button class="form__btn" type="submit">Отправить</button>
+  </form>
+
+  <form class="form" enctype="multipart/form-data" method="post">
+    <input type="hidden" name="Форма" value="Форма с файлом">
+    <input class="form__input" type="text" placeholder="Имя" name="Имя">
+    <input class="form__input form__file" type="file" name="myfile[]" multiple id="myfile">
+    <button class="form__btn" type="submit">Отправить</button>
+  </form>
+
+  <script defer src="./main.js"></script>
+
+</body>
+
+</html>
