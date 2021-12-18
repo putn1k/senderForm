@@ -17,7 +17,7 @@ $style_td = '
 ';
 
 $sender_email = "noreply@{$_SERVER['HTTP_HOST']}"; // с этого адреса приходят письма
-$admin_email  = "ex@mail.com"; // на этот адрес приходит отправленная форма
+$admin_email  = "htc.putnik@gmail.com"; // на этот адрес приходит отправленная форма
 $additional_email_1  = "ex-copy@mail.com"; // адресат для копии
 $form_subject = "Обратная связь с сайта {$_SERVER['HTTP_HOST']}"; // тема письма
 $file = $_FILES['myfile'];
